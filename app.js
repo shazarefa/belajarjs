@@ -22,14 +22,14 @@ app.get('/', (req, res) => {
     res.status(404).send(`Error: File tidak ditemukan di ${filePath}`);
   }
 });
+// Rute untuk Halaman Profil
+app.get('/profil', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'profil.html'));
+});
 // Jalur ini akan menangkap semua alamat yang tidak terdaftar di atas
 app.use((req, res) => {
   res.status(404).sendFile(path.join(__dirname, 'public', '404.html'));
 });
 app.listen(3000, () => {
   console.log('Server berjalan di http://localhost:3000');
-});
-// Rute untuk Halaman Profil
-app.get('/profil', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'profil.html'));
 });
