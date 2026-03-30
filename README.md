@@ -36,3 +36,30 @@ Proyek ini telah melewati proses audit internal untuk memastikan kualitas fungsi
 - [x] **Visual Consistency:** Font dan warna seragam di semua halaman.
 - [x] **Accessibility:** Kontras warna memenuhi standar keterbacaan.
 - [ ] **Performance:** Optimasi gambar (In Progress).
+
+*Dibuat oleh Shaza Refa Yuhana sebagai bagian dari transisi karir ke QA & Tech Sector.*
+
+---
+
+### 📝 Teknis Malam Ini (The "Bug Fix" Report)
+
+| Masalah | Penyebab | Solusi |
+| :--- | :--- | :--- |
+| **Profil 404 Not Found** | Middleware 404 diletakkan di atas rute `/profil`. | Memindahkan rute `/profil` ke atas (sebelum) middleware 404. |
+| **Path Error (ENOENT)** | Terminal berada di luar folder proyek. | Menggunakan `cd` untuk masuk ke folder `belajarjs`. |
+| **UI/UX Dashboard** | Perlu tampilan profesional untuk portofolio. | Membuat `dashboard.html` dengan CSS Grid & modern styling. |
+
+---
+
+### 🚀 Ritual Penutup (Push to GitHub)
+ Ayo kirim ke GitHub:
+
+1.  Buka terminal di **Cursor**.
+2.  Ketik perintah sakti ini:
+    ```bash
+    git add .
+    git commit -m "Fix: Reordering middleware to resolve 404 error on profile route"
+    git push
+    ```
+
+---
