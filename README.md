@@ -62,4 +62,22 @@ Proyek ini telah melewati proses audit internal untuk memastikan kualitas fungsi
     git push
     ```
 
----
+---TEST CASE :
+						
+	Test Case ID 	Test Scenario	Pre_Condition	Test Steps	Expectation Result	Status 
+	TC-LG-01	login dengan password salah 	berada dihalaman login	1. masukkan username valid, masukkan password yang salah, klik login	muncul pesan error invallid username 	pass
+	TC-LG-02	login dengan username salah 	berada dihalaman login	1. masukkan username invalid, password benar, klik login	muncul pesan error invallid username 	pass
+	TC-LG-03	login dengan usenamde dan password benar 	berada dihalaman login	1. masukkan username valid, masukkan password valid, klik login 	login berhasil 	pass
+	TC-AU-01	isi username >10 karakter 	berdada di halaman add user 	masukkan user, usia, submit	user tidak berhasil dibuat dengan karakter >10 	pass
+	TC-AU-02	Isi username sesuai karakter 	berada di halaman add user 	masukkan user, usia , submit 	user berhasil 	pass
+										
+						
+	test plan					
+	website belajar bareng 					
+	object : 					
+	halaman login : bisa masuk atau tidak 					
+	halaman add user : bisa tambah atau tidak 					
+	requirments:					
+	umur tidak boleh ditulis huruf  harus angka 					
+	nama maksimal 10 karekter 					
+	ditest menggunakan browser chrome 					
